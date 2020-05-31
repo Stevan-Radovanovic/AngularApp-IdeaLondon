@@ -3,7 +3,7 @@
     <mat-card>
       <mat-card-title translate>
         {{ product.title }}
-        <button mat-raised-button color="accent">
+        <button mat-raised-button color="accent" (click)="openBottomSheet()">
           <span translate>card.more</span>
         </button>
       </mat-card-title>

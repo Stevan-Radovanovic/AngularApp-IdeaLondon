@@ -5,18 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { HomeComponent } from './home/home.component';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    BottomSheetComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +32,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    MatBottomSheetModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -33,6 +41,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       },
     }),
   ],
+  entryComponents: [BottomSheetComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
