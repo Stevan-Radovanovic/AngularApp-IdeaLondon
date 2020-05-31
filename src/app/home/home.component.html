@@ -1,40 +1,14 @@
-<div class="columns">
-  <div class="column is-4">
+<div class="columns is-multiline">
+  <div class="column is-4" *ngFor="let product of products">
     <mat-card>
       <mat-card-title translate>
-        card.title1
+        {{ product.title }}
       </mat-card-title>
       <mat-card-subtitle translate>
-        card.subtitle1
+        {{ product.subtitle }}
       </mat-card-subtitle>
       <mat-card-content translate>
-        card.content1
-      </mat-card-content>
-    </mat-card>
-  </div>
-  <div class="column is-4">
-    <mat-card>
-      <mat-card-title translate>
-        card.title2
-      </mat-card-title>
-      <mat-card-subtitle translate>
-        card.subtitle2
-      </mat-card-subtitle>
-      <mat-card-content translate>
-        card.content2
-      </mat-card-content>
-    </mat-card>
-  </div>
-  <div class="column is-4">
-    <mat-card>
-      <mat-card-title translate>
-        card.title3
-      </mat-card-title>
-      <mat-card-subtitle translate>
-        card.subtitle3
-      </mat-card-subtitle>
-      <mat-card-content translate>
-        card.content3
+        {{ product.content }}
       </mat-card-content>
     </mat-card>
   </div>
