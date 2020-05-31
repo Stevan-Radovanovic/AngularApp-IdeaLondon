@@ -3,3 +3,8 @@ mat-card {
   width: 92%;
   background-color: var(--primary-color);
 }
+
+mat-card-title button {
+  position: absolute;
+  right: 4px;
+}
