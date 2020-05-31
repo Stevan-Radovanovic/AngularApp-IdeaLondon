@@ -1,0 +1,17 @@
+{
+  "language": {
+    "first": "English",
+    "second": "Serbian"
+  },
+  "card": {
+    "title1": "Fiji Water",
+    "subtitle1": "It's actually really expensive",
+    "content1": "Content that is placed inside a card and is supposed to make some sense.",
+    "title2": "Somersby",
+    "subtitle2": "Refreshing and tasty!",
+    "content2": "Content that is placed inside a card and is supposed to make some sense.",
+    "title3": "Pardon Pretzels",
+    "subtitle3": "Are these still a thing?",
+    "content3": "Content that is placed inside a card and is supposed to make some sense."
+  }
+}
