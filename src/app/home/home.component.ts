@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.products = this.serv.getProducts();
   }
 
-  openBottomSheet() {
-    this.bottomSheet.open(BottomSheetComponent);
+  openBottomSheet(product: Product) {
+    this.bottomSheet.open(BottomSheetComponent, { data: product });
   }
 }
