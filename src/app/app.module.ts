@@ -11,11 +11,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { HoverStyleDirective } from './hoverstyle.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
     HeaderComponent,
     HomeComponent,
     BottomSheetComponent,
+    HoverStyleDirective,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    MatChipsModule,
     MatBottomSheetModule,
     TranslateModule.forRoot({
       loader: {
