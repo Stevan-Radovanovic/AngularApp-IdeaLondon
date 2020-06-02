@@ -13,14 +13,23 @@
     </div>
     <div class="column is-offset-1 is-2">
       <mat-chip-list>
-        <mat-chip color="accent" selected style="max-width: 60px;"
-          >Chip1</mat-chip
+        <mat-chip
+          color="accent"
+          selected
+          style="max-width: 70px; justify-content: center;"
+          >{{ data.title | hashify }}</mat-chip
         >
-        <mat-chip color="warn" selected style="max-width: 60px;"
-          >Chip2</mat-chip
+        <mat-chip
+          color="warn"
+          selected
+          style="max-width: 60px; justify-content: center;"
+          >IDEA</mat-chip
         >
-        <mat-chip color="secondary" selected style="max-width: 60px;"
-          >Chip3</mat-chip
+        <mat-chip
+          color="secondary"
+          selected
+          style="max-width: 60px; justify-content: center;"
+          >London</mat-chip
         >
       </mat-chip-list>
     </div>

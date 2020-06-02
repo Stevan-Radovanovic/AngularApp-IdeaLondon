@@ -18,6 +18,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { HoverStyleDirective } from './hoverstyle.directive';
+import { HashifyPipe } from './hashify.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HoverStyleDirective } from './hoverstyle.directive';
     HomeComponent,
     BottomSheetComponent,
     HoverStyleDirective,
+    HashifyPipe,
   ],
   imports: [
     BrowserModule,
